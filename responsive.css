@@ -1,0 +1,105 @@
+.checkbtn{
+    color: black;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px 5px 1px 5px;
+     display: none; 
+    margin-right: 20px;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:576px){
+
+    .navlinks{
+        background-color: aliceblue; 
+        font-size: 20px;
+         position: absolute; 
+        top: 100px;
+        /* display: flex; */
+        padding: 0px 25px;
+        flex-direction: column;
+        display: none; 
+        height: 300px;
+        width: 100%;
+    }
+
+    .navlinks li{
+        /* background-color: brown; */
+        background-color: aliceblue;
+        /* color: white; */
+        height: 24.5%;
+        width: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navlinks li:hover{
+        background-color: #ad0fc569;
+    }
+
+    .checkbtn {
+        display: block; 
+    }
+
+    #check:checked~.navlinks {
+         display: flex; 
+    }
+
+    .herosection .content{
+        width: 100%;
+    }
+    .herosection .content p{
+        /* color: #ffffff; */
+        color: black;
+    }
+    .herosection .content h1{
+        /* color: #ffffff; */
+        color: black;
+    }
+    .content button{
+        margin: 15px 0;
+    }
+    .about{
+        flex-direction: column;
+        /* overflow: hidden;  */
+    }
+    .about .image{
+        width: 100%;
+        padding: 50px 30px 50px 30px;
+    }
+    .about h2{
+        /* margin-right: 60px; */
+        width: 400px;
+    }
+    .about .content {
+          width: 100%;  
+          /* text-align: center;   */
+          margin: 0 auto;
+          padding: 20px 40px;
+    }
+    .facility .box-container .box p{
+        width: 20px;
+    }
+    .gallery .box-container .box{
+        padding: 10px 20px;
+    }
+    .team .box-container .box{
+        padding: 10px 20px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact .container{
+       margin-bottom: 300px;
+    }
+    .contact .images{
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+        /* padding: 10px 20px; */
+    }
+}
